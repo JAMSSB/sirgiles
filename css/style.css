@@ -27,6 +27,8 @@ body {
 /*
 Calendar
 */
+
+/* Matthew is the worst person I've ever met */
 .calendar {
     padding: 50px;
     display: flex;
@@ -34,7 +36,3 @@ Calendar
     justify-content: center;
     background-color: #2f3640;
 }    
-
-.calendar iframe {
-   
-}
