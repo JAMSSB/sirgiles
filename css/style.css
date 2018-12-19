@@ -1,27 +1,57 @@
 body {
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
     margin: 0;
-    font-size: 20px;
+    padding: 0;
     overflow-x: hidden;
 }
 
 .header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     background-color: #000;
     padding: 50px 150px;
-    background: url(../img/Header.jpg);
+    background-color: #2f3640;
+    /*background: url(../img/Header.jpg);
     background-attachment: absolute;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 300px;
+    */
+    height: 100px;
 }
 
 .header h1 {
-    font-size: 500%;
-    color: 
+    font-size: 350%;
+    margin-right: 200px;
+}
+
+/*
+    Navigation Bar
+*/
+.navigation {
+    display: flex;
+    flex-direction: row;
+}
+
+.navigation a {
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.navigation li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+.navigation .highlight {
+    color: white;
+    font-weight: bold;
 }
 
 /*
