@@ -78,3 +78,13 @@ Calendar
 .about_us {
     
 }
+
+/*
+    Database
+*/
+.create_beer {
+    display: grid;
+    grid-template-columns: 10% 20%;
+    grid-template-rows: 25px;
+    padding-left: 25px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Sir Giles Brewing Co.</h1>
+        
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
+            <li><a class="highlight" href="edit.html">Database</a>
+        </ul>
+    </div>
+
+    <div class="explain">
+        <h1>Creating A Beer</h1>
+        <p>Add as much information as necessary, you can always edit and 
+        add more information later</p>
+    </div>
+
+    <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post" class="create_beer">
+        <label>Beer Name:</label>
+        <input type="text" name="beer_name">
+        <label>Recipe Link</label>
+        <input type="text" name="recipe_link">
+        <label>Beer Type</label>
+        <select name="beer_type">
+            <option value="Stout">Stout</option>
+            <option value="IPA">IPA</option>
+            <option value="New England IPA">New England IPA</option>
+        </select>
+        <label>Date Created:</label>
+        <input type="date" name="date_created">
+        <label>Original Gravity</label>
+        <input type="text" name="original_gravity">
+        <label>Secondary Date</label>
+        <input type="date" name="date_second">
+        <label>Secondary Gravity</label>
+        <input type="text" name="secondary_gravity">
+        <label>Date Finished</label>
+        <input type="date" name="date_finished">
+        <label>Final Gravity</label>
+        <input type="text" name="final_gravity">
+        <label>Bottled</label>
+        <input type="text" name="bottled">
+        <label>Brew Notes</label>
+        <textarea name="brew_notes" rows="10" cols="40"></textarea>
+        <button>Back</button>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
