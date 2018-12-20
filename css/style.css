@@ -58,11 +58,23 @@ body {
 Calendar
 */
 
-/* Matthew is the worst person I've ever met */
+/* Erik is the worst person I've ever met */
 .calendar {
     padding: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #2f3640;
-}    
+} 
+
+/*
+    Info Section
+*/
+.info {
+    display: flex;
+    flex-direction: row;
+}
+
+.about_us {
+    
+}
