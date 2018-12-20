@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    background-color: #d0d6d6;
 }
 
 .header {
@@ -55,6 +56,38 @@ body {
 }
 
 /*
+    On Tap
+*/
+
+.on_tap h2 {
+    text-align: center;
+}
+
+.tap_beer_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.tap_beer_list p {
+    margin: 0 20px 0 20px;
+}
+
+/*
+    About Us
+*/
+
+.info {
+    align-content: center;
+    justify-content: center;
+}
+
+.about_us h2 {
+    text-align: center;
+}
+
+/*
 Calendar
 */
 
@@ -64,7 +97,6 @@ Calendar
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #2f3640;
 } 
 
 /*
