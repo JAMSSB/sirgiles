@@ -14,12 +14,6 @@ body {
     background-color: #000;
     padding: 50px 150px;
     background-color: #2f3640;
-    /*background: url(../img/Header.jpg);
-    background-attachment: absolute;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    */
     height: 100px;
 }
 
@@ -59,8 +53,26 @@ body {
     On Tap
 */
 
+.container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.on_tap {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background: #696969;
+    border-radius: 5px;
+    padding: 20px;
+}
+
 .on_tap h2 {
     text-align: center;
+    font-size: 50px;
+    margin: 10px;
 }
 
 .tap_beer_list {
@@ -71,19 +83,56 @@ body {
 }
 
 .tap_beer_list p {
-    margin: 0 20px 0 20px;
+    padding: 0 30px 0 30px;
+    font-size: 30px;
+}
+
+.left_beer {
+    border-right: solid 2px black;
+}
+
+.right_beer {
+    border-left: solid 2px black;
 }
 
 /*
     About Us
 */
-
-.info {
+.container_info {
+    display: flex;
     align-content: center;
     justify-content: center;
+    margin-bottom: 50px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.about_us {
+    padding: 30px;
+    padding-top: 10px;
+    border-radius: 5px;
+    background: #2f3640;
+    margin-right: 50px;
+    width: 500px;
 }
 
 .about_us h2 {
+    text-align: center;
+}
+
+.about_us p {
+    font-size: 20px;
+}
+
+.members {
+    padding: 30px;
+    padding-top: 10px;
+    border-radius: 5px;
+    background: #696969;
     text-align: center;
 }
 
@@ -114,35 +163,39 @@ Calendar
 /*
     Database
 */
-.create_beer {
-    display: grid;
-    grid-template-columns: 10% 20%;
-    grid-template-rows: 25px;
-    padding-left: 25px;
+.container_database {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
 }
 
 .database-choices {
-    display: grid;
-    background-color: rgb(44, 43, 49);
-    grid-template-columns: 20% 20%;
-    grid-gap: 30px;
-    width: 100%;
-    height: 200px;
-    padding: 200px 25%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
 }
 
 .database-choices a {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(34, 33, 126);
-    color: #fff;
+    background: #696969;
+    color: black;
     margin: 0;
     padding: 50px 20px;
     text-decoration: none;
     font-size: 25px;
+    margin: 20px;
+    width: 250px;
+    border-radius: 5px;
 }
 
 .database-choices a:hover {
-    background-color: rgb(48, 46, 138);
+    background-color: rgb(80, 80, 80);
+}
+
+.button_container {
+    display: flex;
+    flex-direction: column;
 }
