@@ -38,8 +38,7 @@ body {
     font-weight: bold;
 }
 
-.navigation li {
-    float: left;
+.navigation li {    
     display: inline;
     padding: 0 20px 0 20px;
 }
@@ -107,7 +106,7 @@ body {
 
 .info {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-top: 40px;
 }
 
@@ -136,6 +135,14 @@ body {
     text-align: center;
 }
 
+.members p {
+    font-size: 20px;
+}
+
+.members_list {
+    margin-top: 40px;
+}
+
 /*
 Calendar
 */
@@ -147,18 +154,6 @@ Calendar
     align-items: center;
     justify-content: center;
 } 
-
-/*
-    Info Section
-*/
-.info {
-    display: flex;
-    flex-direction: row;
-}
-
-.about_us {
-    
-}
 
 /*
     Database
@@ -198,4 +193,86 @@ Calendar
 .button_container {
     display: flex;
     flex-direction: column;
+}
+
+/*
+                        PHONE LAYOUT
+*/
+@media (max-width: 568px) {
+
+    /*   Header   */
+
+    .header {
+        flex-direction: column;
+        height: 200px;
+        padding: 0px;
+    }
+
+    .header h1 {
+        font-size: 40px;
+        margin-right: 0px;
+        text-align: center;
+    }
+    
+    .navigation {
+        padding: 0px;
+        width: 400px;
+    }
+
+    .navigation li {
+        font-size: 30px;
+        padding: 0 30px 0 30px;
+    }
+
+    /*   On Tap   */
+
+    .on_tap {
+        text-align: center;
+        width: 320px;
+    }
+
+    .on_tap h2 {
+        border-bottom: 2px solid black;
+    }
+
+    .tap_beer_list {
+        flex-direction: column;
+    }
+
+    .left_beer {
+        border-right: none;
+    }
+
+    .right_beer {
+        border-left: none;
+    }
+
+    /*   About Us   */
+
+
+    .info {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .info h2 {
+        font-size: 30px;
+    }
+
+    .about_us {
+        margin-right: 0px;
+        margin-bottom: 40px;
+        width: 300px;
+        text-align: center;
+    }
+
+    .members {
+        width: 300px;
+    }
+
+    /*   Database   */
+
+    .database-choices {
+        flex-direction: column;
+    }
 }
