@@ -38,7 +38,8 @@ body {
     font-weight: bold;
 }
 
-.navigation li {    
+.navigation li {
+    float: left;
     display: inline;
     padding: 0 20px 0 20px;
 }
@@ -106,7 +107,7 @@ body {
 
 .info {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-top: 40px;
 }
 
@@ -135,14 +136,6 @@ body {
     text-align: center;
 }
 
-.members p {
-    font-size: 20px;
-}
-
-.members_list {
-    margin-top: 40px;
-}
-
 /*
 Calendar
 */
@@ -154,6 +147,18 @@ Calendar
     align-items: center;
     justify-content: center;
 } 
+
+/*
+    Info Section
+*/
+.info {
+    display: flex;
+    flex-direction: row;
+}
+
+.about_us {
+    
+}
 
 /*
     Database
@@ -192,11 +197,68 @@ Calendar
 
 .button_container {
     display: flex;
+    flex-direction: row;
+}
+
+/* Create-beer */
+.create-beer-container, .delete-tap {
+    display: flex;
+    padding: 30px 0;
     flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.create-beer-container h1 {
+    font-size: 400%;
+}
+
+.create-beer, .search-form {
+    padding: 30px 0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 200px 300px;
+    grid-template-rows: auto;
+    grid-gap: 20px 0px;
+}
+
+.create-beer label, .search-form label {
+    font-size: 150%;
+}
+
+.create-beer input, .create-beer textarea, .search-form input, .search-from textarea {
+    font-size: 150%;
+    border-radius: 10px;
+}
+
+/* Search-beer */
+
+.selection {
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    grid-row: 10px;
+    grid-gap: 10px 20px;
+    align-items: center;
+}
+
+.change-tap {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-row: 30px;
+    grid-gap: 30px 20px;
+}
+
+.change-selection {
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    grid-row: 30px;
+    grid-gap: 30px 20px;
+    align-items: center;
 }
 
 /*
-                        PHONE LAYOUT
+    PHONE LAYOUT
 */
 @media (max-width: 568px) {
 
