@@ -3,23 +3,37 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-color: #d0d6d6;
+    background-color: #ecf0f1;
 }
+
+/*
+    Header
+*/
 
 .header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    background-color: #000;
-    padding: 50px 150px;
-    background-color: #2f3640;
-    height: 100px;
+    justify-content: space-between;
+    background-color: #2c3e50;
+    padding: 10px 25px;
 }
 
 .header h1 {
-    font-size: 350%;
-    margin-right: 200px;
+    font-size: 250%;
+    font-family: 'Staatliches';
+    margin: 0;
+}
+
+/*
+    Showcase
+*/
+
+.showcase { 
+    background-image: url(../img/showcase.jpg);
+    background-size: cover;
+    background-position: 0px -350px;
+    padding: 200px 200px;
 }
 
 /*
@@ -34,39 +48,35 @@ body {
     color: #000;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 16px;
+    font-family: 'Staatliches';
+    font-size: 150%;
     font-weight: bold;
 }
 
 .navigation li {
-    float: left;
-    display: inline;
+    list-style: none;
     padding: 0 20px 0 20px;
 }
 
 .navigation .highlight {
-    color: white;
-    font-weight: bold;
+    color: #ecf0f1;
+}
+
+.navigation a:hover {
+    color: rgb(155, 155, 155);
 }
 
 /*
     On Tap
 */
-
-.container {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    padding-top: 100px;
-}
-
 .on_tap {
-    align-items: center;
     display: flex;
     flex-direction: column;
-    background: #696969;
-    border-radius: 5px;
-    padding: 20px;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    width: 30%;
+    padding: 20px 0;
 }
 
 .on_tap h2 {
@@ -75,24 +85,9 @@ body {
     margin: 10px;
 }
 
-.tap_beer_list {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-}
-
-.tap_beer_list p {
+.on_tap p {
     padding: 0 30px 0 30px;
     font-size: 30px;
-}
-
-.left_beer {
-    border-right: solid 2px black;
-}
-
-.right_beer {
-    border-left: solid 2px black;
 }
 
 /*
@@ -102,45 +97,48 @@ body {
     display: flex;
     align-content: center;
     justify-content: center;
-    margin-bottom: 50px;
-}
-
-.info {
-    display: flex;
-    flex-direction: column;
-    margin-top: 40px;
 }
 
 .about_us {
-    padding: 30px;
-    padding-top: 10px;
+    padding: 0 50px;
     border-radius: 5px;
-    background: #2f3640;
-    margin-right: 50px;
-    width: 500px;
+    width: 70%;
+    background-color: #ecf0f1;
 }
 
 .about_us h2 {
     text-align: center;
+    font-size: 300%;
 }
 
 .about_us p {
-    font-size: 20px;
+    font-size: 200%;
+    text-align: center;
 }
 
 .members {
-    padding: 30px;
-    padding-top: 10px;
-    border-radius: 5px;
-    background: #696969;
+    width: 30%;
+    background: #fff;
     text-align: center;
+    border-left: 1px solid #000;
+}
+
+.members h2 {
+    font-size: 300%;
+}
+
+.members b {
+    font-size: 175%;
+}
+
+.members p {
+    font-size: 150%;
 }
 
 /*
 Calendar
 */
 
-/* Erik is the worst person I've ever met */
 .calendar {
     padding: 50px;
     display: flex;
@@ -148,6 +146,14 @@ Calendar
     justify-content: center;
 } 
 
+.calendar iframe {
+    width: 1200px;
+    height: 600px;
+    background-color: #fff;
+    border: solid 1px rgb(0, 0, 0);
+    border-radius: 15px;
+    padding: 20px
+}
 /*
     Info Section
 */
@@ -262,79 +268,5 @@ Calendar
 */
 @media (max-width: 568px) {
 
-    /*   Header   */
-
-    .header {
-        flex-direction: column;
-        height: 200px;
-        padding: 0px;
-    }
-
-    .header h1 {
-        font-size: 40px;
-        margin-right: 0px;
-        text-align: center;
-    }
-    
-    .navigation {
-        padding: 0px;
-        width: 400px;
-    }
-
-    .navigation li {
-        font-size: 30px;
-        padding: 0 30px 0 30px;
-    }
-
-    /*   On Tap   */
-
-    .on_tap {
-        text-align: center;
-        width: 320px;
-    }
-
-    .on_tap h2 {
-        border-bottom: 2px solid black;
-    }
-
-    .tap_beer_list {
-        flex-direction: column;
-    }
-
-    .left_beer {
-        border-right: none;
-    }
-
-    .right_beer {
-        border-left: none;
-    }
-
-    /*   About Us   */
-
-
-    .info {
-        flex-direction: column;
-        align-content: center;
-    }
-
-    .info h2 {
-        font-size: 30px;
-    }
-
-    .about_us {
-        margin-right: 0px;
-        margin-bottom: 40px;
-        width: 300px;
-        text-align: center;
-    }
-
-    .members {
-        width: 300px;
-    }
-
-    /*   Database   */
-
-    .database-choices {
-        flex-direction: column;
-    }
+ 
 }

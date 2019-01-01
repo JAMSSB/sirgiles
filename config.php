@@ -1,7 +1,7 @@
 <?php
 define('DB_SERVER', 'localhost');
-define('DB_USERNAME', 'y0fgakv1fpy9');
-define('DB_PASSWORD', 'Google19#');
+define('DB_USERNAME', 'root');
+define('DB_PASSWORD', '');
 define('DB_NAME', 'sir_giles');
 
 try {

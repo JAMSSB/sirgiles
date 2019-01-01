@@ -3,6 +3,7 @@
 <head>
     <title></title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
 </head>
 <body>
     <div class="header">
