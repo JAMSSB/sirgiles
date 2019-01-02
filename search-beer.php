@@ -1,7 +1,8 @@
 <?php
 session_start();
 
-require_once("config.php");
+require_once('require_php/config.php');
+require_once('require_php/check_login.php');
 
 $sql = "SELECT * FROM beer ORDER BY date_created DESC";
 
@@ -30,8 +31,10 @@ if(isset($_POST['view-button'])) {
 
         <ul class="navigation">
             <li><a href="index.php">Home</a></li>
-            <li><a href="calendar.html">Calendar</a></li>
-            <li><a href="database.html">Database</a></li>
+            <li><a href="calendar.php">Calendar</a></li>
+            <?php
+            require_once('require_php/login_display.php');
+            ?>
         </ul>
     </div>
 

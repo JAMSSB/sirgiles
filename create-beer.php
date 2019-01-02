@@ -1,7 +1,9 @@
 <?php
 // Initialize the session
+session_start();
 
-require_once("config.php");
+require_once('require_php/config.php');
+require_once('require_php/check_login.php');
 
 $BEER_NAME = $BEER_TYPE = $DATE_CREATED = $ORIGINAL_GRAVITY = $DATE_SECOND = "";
 $SECONDARY_GRAVITY = $DATE_FINISHED = $FINAL_GRAVITY = $BREW_NOTES = $RECIPE_LINK = $BOTTLED = "";
@@ -86,8 +88,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         <ul class="navigation">
             <li><a href="index.php">Home</a></li>
-            <li><a href="calendar.html">Calendar</a></li>
-            <li><a href="database.html">Database</a></li>
+            <li><a href="calendar.php">Calendar</a></li>
+            <?php
+            require_once('require_php/login_display.php');
+            ?>
         </ul>
     </div>
 

@@ -1,3 +1,9 @@
+<?php
+session_start();
+
+require_once('require_php/check_login.php');
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,8 +17,10 @@
 
         <ul class="navigation">
             <li><a href="index.php">Home</a></li>
-            <li><a href="calendar.html">Calendar</a></li>
-            <li><a href="database.html">Database</a></li>
+            <li><a href="calendar.php">Calendar</a></li>
+            <?php
+            require_once('require_php/login_display.php');
+            ?>
         </ul>
     </div>
 

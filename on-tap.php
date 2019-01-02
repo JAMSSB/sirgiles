@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require_once('config.php');
+require_once('require_php/config.php');
 
 if(isset($_POST['change-button'])) {
     $_SESSION['tap_num'] = $_POST['change-button'];
@@ -26,8 +26,10 @@ if(isset($_POST['change-button'])) {
 
         <ul class="navigation">
             <li><a href="index.php">Home</a></li>
-            <li><a href="calendar.html">Calendar</a></li>
-            <li><a href="database.html">Database</a></li>
+            <li><a href="calendar.php">Calendar</a></li>
+            <?php
+            require_once('require_php/login_display.php');
+            ?>
         </ul>
     </div>
 

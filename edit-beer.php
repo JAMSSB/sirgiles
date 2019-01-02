@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require_once("config.php");
+require_once('require_php/config.php');
 
 $sql = "SELECT * FROM beer WHERE beer_id=" . $_SESSION['beer_id'];
 
@@ -44,8 +44,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         <ul class="navigation">
             <li><a href="index.php">Home</a></li>
-            <li><a href="calendar.html">Calendar</a></li>
-            <li><a href="database.html">Database</a></li>
+            <li><a href="calendar.php">Calendar</a></li>
+            <?php
+            require_once('require_php/login_display.php');
+            ?>
         </ul>
     </div>
 

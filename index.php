@@ -1,7 +1,8 @@
 <?php
 session_start();
+//$_SESSION['username'] = "";
 
-require_once("config.php");
+require_once('require_php/config.php');
 
 $tap_sql = "SELECT * FROM on_tap";
 
@@ -19,12 +20,14 @@ $tap_sql = "SELECT * FROM on_tap";
 
 <body>
     <div class="header">
-        <h1>Sir Giles Brewing Company</h1>
+        <h1>Sir Giles Yellow Company</h1>
 
         <ul class="navigation">
             <li><a class="highlight" href="index.php">Home</a></li>
-            <li><a href="calendar.html">Calendar</a></li>
-            <li><a href="database.html">Database</a>
+            <li><a href="calendar.php">Calendar</a></li>
+            <?php
+            require_once('require_php/login_display.php');
+            ?>          
         </ul>
     </div>
 
